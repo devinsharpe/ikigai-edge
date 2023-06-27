@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.20.0",
+    "@clerk/themes": "^1.7.5",
     "@t3-oss/env-nextjs": "^0.4.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",

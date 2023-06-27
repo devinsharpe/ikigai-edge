@@ -5,6 +5,14 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  darkMode: "media",
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+        serif: ["var(--font-playfair)", "ui-serif", "system-ui"]
+      }
+    }
+  },
   plugins: [],
 }
