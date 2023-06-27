@@ -35,7 +35,7 @@ export default function RootLayout({
           "min-h-screen overflow-auto dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 p-4"
         )}
       >
-        <body className={cn("pt-16 h-full w-full flex flex-col")}>
+        <body className={cn("pt-16 min-h-screen w-full flex flex-col")}>
           <Navbar />
           {children}
           <footer className="w-full py-4 space-y-4">
@@ -46,9 +46,20 @@ export default function RootLayout({
               </a>
             </p>
             <div className="flex items-center justify-center gap-4 text-zinc-400 dark:text-zinc-600">
-              <Twitter />
-              <Github />
-              <LinkIcon />
+              <a href="https://twitter.com/Devin_Sharpe" rel="noreferrer" target="_blank">
+                <Twitter />
+                <span className="sr-only">
+                  Twitter Link to @devin_sharpe
+                </span>
+              </a>
+              <a href="https://github.com/devinsharpe" rel="noreferrer" target="_blank">
+                <Github />
+                <span className="sr-only">Github link to @devinsharpe</span>
+              </a>
+              <a href="https://devsharpe.io" rel="noreferrer" target="_blank">
+                <LinkIcon />
+                <span className="sr-only">Website link to devsharpe.io</span>
+              </a>
             </div>
           </footer>
         </body>
